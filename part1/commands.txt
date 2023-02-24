@@ -1,0 +1,5 @@
+docker build --tag python-django .
+docker run --publish 8000:8000 python-django
+
+
+# https://www.freecodecamp.org/news/how-to-remove-images-in-docker/#:~:text=Docker%20rmi&text=To%20remove%20the%20image%2C%20you,your%2Dimage%2Did%3E%20.

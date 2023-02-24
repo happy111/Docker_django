@@ -1,0 +1,16 @@
+ sudo systemctl restart docker.socket docker.service
+
+ docker rmi $(docker images -q)
+ docker rm $(docker ps -q)
+
+docker-compose build
+docker-compose run --rm app django-admin startproject core.
+docker-compose up
+
+
+
+docker-compose build
+docker-compose run --rm app django-admin startproject core.
+docker-compose up
+
+
